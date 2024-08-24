@@ -3,6 +3,11 @@
  * During this time the thread should not be able to do anything else.
  */
 
-function sleep (seconds) {
-
+function sleep(seconds) {
+  const time = Date.now() + seconds;
+  while (Date.now() < time) {}
 }
+
+console.log("Execuation starts");
+sleep(5);
+console.log("Execuation ends");

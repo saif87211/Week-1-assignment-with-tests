@@ -1,5 +1,6 @@
 ### Node ###
 # Logs
+*.nix
 .replit
 logs
 *.log
